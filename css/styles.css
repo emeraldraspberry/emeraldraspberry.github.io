@@ -1,0 +1,12 @@
+html {
+  box-sizing: border-box;
+  width: 100%;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+#body-container {
+  display: flex;
+  flex-flow: row;
+}
