@@ -5,8 +5,9 @@ html {
   box-sizing: border-box;
   height: 100%;
   width: 100%;
+  overflow-x: hidden;
 
-  background-color: #62bdac;
+  background-color: #478a7e;
   color: white;
   /* text-shadow:
     -0.05rem -0.05rem 0.1rem #000,
@@ -14,7 +15,8 @@ html {
     0.05rem 0.05rem 0.1rem #000,
     -0.05rem 0.05rem 0.1rem #000; */
 
-  font-size: 100%;
+  font-size: 16px;
+  /* -webkit-font-smoothing: subpixel-antialiased; */
 }
 *, *:before, *:after {
   box-sizing: inherit;
@@ -28,6 +30,14 @@ h2 {
 h3 {
   font-size: calc(2rem * 3/5);
 }
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+}
+ul {
+  list-style-type: none;
+}
 header > h1 {
   text-align: center;
 }
@@ -38,7 +48,7 @@ header > figure {
   align-items: center;
   padding: 1rem;
 
-  background-color: #34a38f;;
+  background-color: #34a38f;
   position: relative;
   z-index: 2;
 }
@@ -74,10 +84,10 @@ footer > p {
   transition-timing-function: ease-in-out;
 }
 #social-container > a:link {
-  color: #AAA;
+  color: white
 }
 #social-conatiner > a:visited {
-  color: #AAA;
+  color: white;
 }
 #social-container > a:hover {
   transform: scale(1.5);
@@ -91,15 +101,33 @@ footer > p {
 }
 #page-sidebar {
   background-color: #62bdac;
-  transform: skew(-2deg);
+  transform: skew(-4.5deg) ;
   width: 320px;
   min-width: 320px;
   max-width: 320px;
   box-shadow: 0.1rem 0.1rem 1rem black;
   z-index: 1;
 }
-#page-sidebar h1, li, p, a {
-  transform: skew(2deg);
+#page-sidebar h1 {
+  transform: skew(4.5deg);
+}
+#page-sidebar li {
+  transform: skew(4.5deg);
+}
+#page-sidebar p {
+  transform: skew(4.5deg);
+}
+#page-sidebar a {
+  transform: skew(4.5deg);
+}
+#page-sidebar figcaption {
+  transform: skew(4.5deg);
+}
+#page-sidebar a:link {
+  transform: skew(4.5deg);
+}
+#page-sidebar a:hover {
+  transform: skew(4.5deg) scale(1.5);
 }
 #page-content {
   flex-grow: 1;
@@ -110,6 +138,43 @@ footer > p {
   overflow: scroll;
   overflow-x: hidden;
   padding-left: 0.5rem;
+  transform: skew(-4.5deg);
+}
+#page-content h1 {
+  transform: skew(4.5deg);
+}
+#page-content h2 {
+  transform: skew(4.5deg);
+}
+#page-content h2 ~ p {
+  margin-left: 1rem;
+}
+#page-content h3 {
+  transform: skew(4.5deg);
+}
+#page-content h4 {
+  transform: skew(4.5deg);
+}
+#page-content li {
+  transform: skew(4.5deg);
+}
+#page-content a:not(.button-box) {
+  transform: skew(4.5deg);
+}
+#page-content a > div {
+  transform: skew(4.5deg);
+}
+/* For some odd reason, small text is really blurry unless
+a display value is applied (contents, inline, initial...).
+Don't remove it. */
+#page-content p {
+  display: inline;
+  text-indent: 0;
+  margin: 0;
+  transform: skew(4.5deg);
+}
+#page-content p>span {
+  font-size: 1rem;
 }
 #page-content > h2, p {
   margin-left: 1rem;
@@ -127,6 +192,17 @@ footer > p {
 }
 .portfolio-item-container img {
   max-width: 250px;
+}
+.button-box {
+  display: block;
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  background-color: white;
+  padding: 1rem;
+  margin: 2rem 0rem 1rem 1rem;
+  box-shadow: 0.1rem 0.1rem 0.5rem black;
+  color: black;
 }
 @media only screen and (max-width: 1200px) {
   .portfolio-item-container {
