@@ -6,6 +6,7 @@ html {
   height: 100%;
   width: 100%;
   overflow-x: hidden;
+  overflow-y: hidden;
 
   background-color: #478a7e;
   color: white;
@@ -34,6 +35,11 @@ a {
   text-decoration: none;
   font-weight: bold;
   color: white;
+  transition: color, 250ms;
+  transition-timing-function: ease-in-out;
+}
+a:hover {
+  color: #1c3530;
 }
 ul {
   list-style-type: none;
@@ -80,7 +86,7 @@ footer > p {
   color: white;
   margin: 0rem 0.5rem 0rem 0.5rem;
   text-decoration: none;
-  transition: transform 0.25s;
+  transition: transform color 0.25s;
   transition-timing-function: ease-in-out;
 }
 #social-container > a:link {
@@ -91,6 +97,7 @@ footer > p {
 }
 #social-container > a:hover {
   transform: scale(1.5);
+  color:  #1c3530;
 }
 
 #body-container {
@@ -101,7 +108,7 @@ footer > p {
 }
 #page-sidebar {
   background-color: #62bdac;
-  transform: skew(-4.5deg) ;
+  /* transform: skew(-4.5deg); */
   width: 320px;
   min-width: 320px;
   max-width: 320px;
@@ -114,10 +121,12 @@ footer > p {
   height: fit-content;
   word-wrap: break-word;
   background-color: #34a38f;
-  overflow: scroll;
+  overflow-y: scroll;
   overflow-x: hidden;
   padding-left: 0.5rem;
-  transform: skew(-4.5deg);
+  height: 100%;
+  /* transform: skew(-4.5deg); */
+  backface-visibility: hidden;
 }
 #page-content > h2, p {
   margin-left: 1rem;
