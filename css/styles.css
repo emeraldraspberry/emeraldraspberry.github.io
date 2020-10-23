@@ -108,27 +108,6 @@ footer > p {
   box-shadow: 0.1rem 0.1rem 1rem black;
   z-index: 1;
 }
-#page-sidebar h1 {
-  transform: skew(4.5deg);
-}
-#page-sidebar li {
-  transform: skew(4.5deg);
-}
-#page-sidebar p {
-  transform: skew(4.5deg);
-}
-#page-sidebar a {
-  transform: skew(4.5deg);
-}
-#page-sidebar figcaption {
-  transform: skew(4.5deg);
-}
-#page-sidebar a:link {
-  transform: skew(4.5deg);
-}
-#page-sidebar a:hover {
-  transform: skew(4.5deg) scale(1.5);
-}
 #page-content {
   flex-grow: 1;
   display: block;
@@ -139,42 +118,6 @@ footer > p {
   overflow-x: hidden;
   padding-left: 0.5rem;
   transform: skew(-4.5deg);
-}
-#page-content h1 {
-  transform: skew(4.5deg);
-}
-#page-content h2 {
-  transform: skew(4.5deg);
-}
-#page-content h2 ~ p {
-  margin-left: 1rem;
-}
-#page-content h3 {
-  transform: skew(4.5deg);
-}
-#page-content h4 {
-  transform: skew(4.5deg);
-}
-#page-content li {
-  transform: skew(4.5deg);
-}
-#page-content a:not(.button-box) {
-  transform: skew(4.5deg);
-}
-#page-content a > div {
-  transform: skew(4.5deg);
-}
-/* For some odd reason, small text is really blurry unless
-a display value is applied (contents, inline, initial...).
-Don't remove it. */
-#page-content p {
-  display: inline;
-  text-indent: 0;
-  margin: 0;
-  transform: skew(4.5deg);
-}
-#page-content p>span {
-  font-size: 1rem;
 }
 #page-content > h2, p {
   margin-left: 1rem;
