@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 html {
+  font-family: 'Quicksand', Cambria, Cochin,
+   Georgia, Times, 'Times New Roman', serif;
   box-sizing: border-box;
   height: 100%;
   width: 100%;
@@ -35,9 +38,9 @@ header > figure {
   align-items: center;
   padding: 1rem;
 
-  background-color: #34a38f;
-  border: 0.1rem solid black;
-  border-radius: 2rem;
+  background-color: #34a38f;;
+  position: relative;
+  z-index: 2;
 }
 header > figure > img {
   border-radius: 100%;
@@ -53,6 +56,9 @@ nav {
   flex-direction: column;
   justify-content: space-around;
   align-items: left;
+}
+footer > p {
+  text-align: center;
 }
 #social-container {
   margin: 0.75rem 0rem 0.75rem 0rem;
@@ -84,11 +90,16 @@ nav {
   height: 100%;
 }
 #page-sidebar {
+  background-color: #62bdac;
+  transform: skew(-2deg);
   width: 320px;
   min-width: 320px;
   max-width: 320px;
   box-shadow: 0.1rem 0.1rem 1rem black;
   z-index: 1;
+}
+#page-sidebar h1, li, p, a {
+  transform: skew(2deg);
 }
 #page-content {
   flex-grow: 1;
@@ -110,13 +121,14 @@ nav {
 }
 .portfolio-item-container {
   display: flex;
-  margin: 0rem 1rem 0rem 1rem;
-  
+  margin: 0.5rem 1rem 0.5rem 1rem;
+  padding: 1rem;
+  background: linear-gradient(90deg, #62bdac, #34a38f);
 }
 .portfolio-item-container img {
-  max-width: 400px;
+  max-width: 250px;
 }
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1200px) {
   .portfolio-item-container {
     flex-flow: row wrap;
   }
