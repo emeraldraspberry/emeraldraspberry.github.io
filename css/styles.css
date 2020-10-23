@@ -1,12 +1,123 @@
 html {
   box-sizing: border-box;
+  height: 100%;
   width: 100%;
+
+  background-color: #62bdac;
+  color: white;
+  /* text-shadow:
+    -0.05rem -0.05rem 0.1rem #000,
+    0.05rem -0.05rem 0.1rem #000,
+    0.05rem 0.05rem 0.1rem #000,
+    -0.05rem 0.05rem 0.1rem #000; */
+
+  font-size: 100%;
 }
 *, *:before, *:after {
   box-sizing: inherit;
+}
+h1 {
+  font-size: 2rem;
+}
+h2 {
+  font-size: calc(2rem * 4/5);
+}
+h3 {
+  font-size: calc(2rem * 3/5);
+}
+header > h1 {
+  text-align: center;
+}
+header > figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+
+  background-color: #34a38f;
+  border: 0.1rem solid black;
+  border-radius: 2rem;
+}
+header > figure > img {
+  border-radius: 100%;
+  max-width: 200px;
+}
+header > figure > figcaption {
+  padding: 1rem;
+  text-align: center;
+  font-style: italic;
+}
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: left;
+}
+#social-container {
+  margin: 0.75rem 0rem 0.75rem 0rem;
+  align-self: center;
+  /* margin: 1rem 0rem 1rem 0rem; */
+  transform: scale(2.5);
+}
+#social-container > a {
+  color: white;
+  margin: 0rem 0.5rem 0rem 0.5rem;
+  text-decoration: none;
+  transition: transform 0.25s;
+  transition-timing-function: ease-in-out;
+}
+#social-container > a:link {
+  color: #AAA;
+}
+#social-conatiner > a:visited {
+  color: #AAA;
+}
+#social-container > a:hover {
+  transform: scale(1.5);
 }
 
 #body-container {
   display: flex;
   flex-flow: row;
+  margin: 0;
+  height: 100%;
+}
+#page-sidebar {
+  width: 320px;
+  min-width: 320px;
+  max-width: 320px;
+  box-shadow: 0.1rem 0.1rem 1rem black;
+  z-index: 1;
+}
+#page-content {
+  flex-grow: 1;
+  display: block;
+  height: fit-content;
+  word-wrap: break-word;
+  background-color: #34a38f;
+  overflow: scroll;
+  overflow-x: hidden;
+  padding-left: 0.5rem;
+}
+#page-content > h2, p {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+#portfolio-container {
+  display: flex;
+  flex-flow: row wrap;
+}
+.portfolio-item-container {
+  display: flex;
+  margin: 0rem 1rem 0rem 1rem;
+  
+}
+.portfolio-item-container img {
+  max-width: 400px;
+}
+@media only screen and (max-width: 1400px) {
+  .portfolio-item-container {
+    flex-flow: row wrap;
+  }
 }
