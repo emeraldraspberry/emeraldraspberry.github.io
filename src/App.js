@@ -1,6 +1,6 @@
-import m from "mithril";
+import m from "../_snowpack/pkg/mithril.js";
 import Home from "./views/Home.js";
-import Sidebar from "./components/Sidebar";
+import Sidebar from "./components/Sidebar.js";
 
 const App = {
   view: (vnode) => {

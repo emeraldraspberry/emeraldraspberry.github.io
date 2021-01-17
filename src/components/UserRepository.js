@@ -1,4 +1,4 @@
-import m from "mithril";
+import m from "../../_snowpack/pkg/mithril.js";
 import LinkButton from "./LinkButton.js";
 import RepoTag from "./RepoTag.js";
 

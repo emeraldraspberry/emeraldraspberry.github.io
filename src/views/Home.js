@@ -1,4 +1,4 @@
-import m from "mithril";
+import m from "../../_snowpack/pkg/mithril.js";
 import UserRepositories from "../components/UserRepositories.js";
 
 const Home = {
