@@ -4,7 +4,12 @@ import Sidebar from "./components/Sidebar";
 
 const App = {
   view: (vnode) => {
-    return m("div", { id: "app" }, m(Sidebar), m(Home));
+    return m(
+      "div",
+      { id: "app" },
+      m(Sidebar),
+      m("div", { id: "router" }, m(Home))
+    );
   },
 };
 
