@@ -15,7 +15,6 @@ const UserRepository = {
         { href: UserRepository.htmlUrl },
         m("h2", UserRepository.name),
         m("p", UserRepository.description),
-        m("p", "Forked: " + UserRepository.fork),
         m("p", "Language: " + UserRepository.language)
       )
     );

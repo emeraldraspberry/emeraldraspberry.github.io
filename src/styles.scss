@@ -7,16 +7,25 @@ $base-bg-color-lighten-5: lighten($base-bg-color, 10%);
 $base-bg-color-lighten-6: lighten($base-bg-color, 15%);
 $base-bg-color-lighten-7: lighten($base-bg-color, 20%);
 $base-bg-color-lighten-8: lighten($base-bg-color, 33%);
-$base-bg-color-lighten-8: lighten($base-bg-color, 50%);
+$base-bg-color-lighten-9: lighten($base-bg-color, 50%);
 
-$base-text-color: #dde;
+$base-text-color: #ccd;
+$base-text-color-darken-1: darken($base-text-color, 12.5%);
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: $base-text-color;
+}
 
 html {
   font-family: "Open Sans", "Lucida Sans", "Lucida Sans Regular",
     "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   box-sizing: border-box;
   background-color: $base-bg-color;
-  color: $base-text-color;
+  color: $base-text-color-darken-1;
   height: 100%;
 }
 
@@ -34,6 +43,10 @@ body {
 a {
   color: $base-text-color;
   text-decoration: none;
+}
+
+p {
+  color: $base-text-color-darken-1;
 }
 
 #app {
@@ -56,6 +69,31 @@ a {
   nav {
     text-align: left;
   }
+
+  li {
+    list-style-type: none;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 0.25rem;
+    transition: border 0.5s;
+    border-right: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    transition: all 0.5s;
+
+    &:hover {
+      border-right: 4px solid $base-bg-color-lighten-8;
+      border-bottom: 4px solid $base-bg-color-lighten-8;
+    }
+  }
+}
+
+footer {
+  font-size: 0.875rem;
+  letter-spacing: 1px;
+}
+
+#username {
+  font-size: 2rem;
 }
 
 #avatar-container {
@@ -71,6 +109,10 @@ a {
 #home {
   overflow: auto;
   max-height: 100vh;
+
+  & > h2 {
+    margin-left: 1rem;
+  }
 }
 
 #user-repositories {
