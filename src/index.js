@@ -9,6 +9,10 @@ let root = document.body;
 m.mount(root, App);
 
 m.route(root.querySelector("#router"), "/home", {
-  "/home": Home,
-  "/other": Other,
+  "/home": () => {
+    return Home;
+  },
+  "/other": () => {
+    return Other;
+  },
 });
