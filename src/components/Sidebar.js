@@ -4,7 +4,9 @@ const Sidebar = {
   view: (vnode) => {
     return m(
       "aside",
-      { id: "sidebar" },
+      {
+        id: "sidebar",
+      },
       m("h1", { id: "username" }, "EmeraldRaspberry"),
       m(
         "div",

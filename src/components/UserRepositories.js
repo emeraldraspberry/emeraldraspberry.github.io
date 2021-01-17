@@ -18,8 +18,13 @@ const UserRepositories = {
       "div",
       { id: "user-repositories" },
       UserRepositories.repositories.map((repo) => {
-        console.log(repo);
-        return m(UserRepository, { name: repo.name });
+        return m(UserRepository, {
+          name: repo.name,
+          htmlUrl: repo.html_url,
+          description: repo.description,
+          fork: repo.fork,
+          language: repo.language,
+        });
       })
     );
   },
