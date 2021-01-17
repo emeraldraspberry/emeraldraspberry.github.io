@@ -17,8 +17,8 @@ const Sidebar = {
         "nav",
         m(
           "ul",
-          m("li", m("a", "Home")),
-          m("li", m("a", "Other Stuff")),
+          m("li", m(m.route.Link, { href: "/home" }, "Home")),
+          m("li", m(m.route.Link, { href: "/other" }, "Other Stuff")),
           m(
             "li",
             m("a", { href: "https://github.com/emeraldraspberry" }, "GitHub")
