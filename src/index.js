@@ -1,5 +1,5 @@
 import m from "mithril";
+import App from "./App.js";
 
 let root = document.body;
-
-m.render(root, 'Hello world');
+m.mount(root, App);
