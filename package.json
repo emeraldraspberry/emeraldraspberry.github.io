@@ -1,0 +1,27 @@
+{
+  "name": "emeraldraspberry.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "snowpack dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emeraldraspberry/emeraldraspberry.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emeraldraspberry/emeraldraspberry.github.io/issues"
+  },
+  "homepage": "https://github.com/emeraldraspberry/emeraldraspberry.github.io#readme",
+  "devDependencies": {
+    "snowpack": "^3.0.11"
+  },
+  "dependencies": {
+    "mithril": "^2.0.4"
+  }
+}
