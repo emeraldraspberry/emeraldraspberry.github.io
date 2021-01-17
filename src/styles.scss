@@ -70,6 +70,12 @@ p {
   }
 }
 
+#router {
+  & > * > h2 {
+    margin-left: 1rem;
+  }
+}
+
 #sidebar {
   background-color: $base-bg-color-lighten-1;
   max-width: 320px;
@@ -126,10 +132,6 @@ footer {
 #home {
   overflow: auto;
   max-height: 100vh;
-
-  & > h2 {
-    margin-left: 1rem;
-  }
 }
 
 #user-repositories {
@@ -153,6 +155,12 @@ footer {
   &:nth-of-type(2n) {
     background-color: $base-bg-color-lighten-4;
     border-color: $base-bg-color-lighten-6;
+  }
+}
+
+#other {
+  & > div {
+    margin: 1rem;
   }
 }
 
