@@ -12,21 +12,28 @@ $base-bg-color-lighten-9: lighten($base-bg-color, 50%);
 $base-text-color: #ccd;
 $base-text-color-darken-1: darken($base-text-color, 12.5%);
 
-h1,
-h2,
-h3,
-h4,
-h5 {
-  color: $base-text-color;
+@font-face {
+  font-family: "Varela Round";
+  src: url("./src/assets/fonts/varela-round.regular.ttf");
 }
 
 html {
-  font-family: "Open Sans", "Lucida Sans", "Lucida Sans Regular",
+  font-family: "Varela Round", "Open Sans", "Lucida Sans", "Lucida Sans Regular",
     "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   box-sizing: border-box;
   background-color: $base-bg-color;
   color: $base-text-color-darken-1;
   height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Quicksand", "Lucida Sans", "Lucida Sans Regular",
+    "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: $base-text-color;
 }
 
 body {
