@@ -1,5 +1,6 @@
 import m from "mithril";
 import LinkButton from "./LinkButton.js";
+import RepoTag from "./RepoTag.js";
 
 const UserRepository = {
   name: String,
@@ -12,8 +13,14 @@ const UserRepository = {
       "div",
       { id: "user-repository" },
       m("h2", UserRepository.name),
-      m("p", UserRepository.description),
-      m("p", "Language: " + UserRepository.language),
+      m(
+        "div",
+        { class: "tag-container" },
+        UserRepository.language
+          ? m(RepoTag, { text: "Language: " + UserRepository.language })
+          : null
+      ),
+      UserRepository.description ? m("p", UserRepository.description) : null,
       m(
         "div",
         { class: "button-container" },

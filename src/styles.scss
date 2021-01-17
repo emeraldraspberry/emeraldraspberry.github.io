@@ -9,6 +9,10 @@ $base-bg-color-lighten-7: lighten($base-bg-color, 20%);
 $base-bg-color-lighten-8: lighten($base-bg-color, 33%);
 $base-bg-color-lighten-9: lighten($base-bg-color, 50%);
 
+$base-bg-color-analog: #140028;
+$base-bg-color-analog-lighten-1: lighten($base-bg-color-analog, 25%);
+$base-bg-color-analog-lighten-2: lighten($base-bg-color-analog, 50%);
+
 $base-text-color: #dde;
 $base-text-color-darken-1: darken($base-text-color, 12.5%);
 
@@ -146,6 +150,23 @@ footer {
   display: flex;
   justify-content: flex-start;
   align-content: center;
+}
+
+.tag-container {
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+}
+
+.repo-tag {
+  font-size: 0.875rem;
+  width: max-content;
+  padding: 0.25rem;
+  border: 2px solid;
+  border-color: $base-bg-color-lighten-5;
+  font-weight: bolder;
+  letter-spacing: -0.5px;
+  border-radius: 0.125rem;
 }
 
 #link-button {
