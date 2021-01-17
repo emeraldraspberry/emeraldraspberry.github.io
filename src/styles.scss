@@ -72,7 +72,7 @@ p {
 
 #sidebar {
   background-color: $base-bg-color-lighten-1;
-  min-width: 320px;
+  max-width: 320px;
   padding: 1rem;
   text-align: center;
   border-right: 2px solid;
@@ -91,6 +91,11 @@ p {
     border-right: 4px solid transparent;
     border-bottom: 4px solid transparent;
     transition: all 0.5s;
+
+    a {
+      display: block;
+      width: 100%;
+    }
 
     &:hover {
       border-right: 4px solid $base-bg-color-lighten-8;
@@ -144,6 +149,11 @@ footer {
   border-color: $base-bg-color-lighten-5;
   height: min-content;
   border-radius: 0.25rem;
+
+  &:nth-of-type(2n) {
+    background-color: $base-bg-color-lighten-4;
+    border-color: $base-bg-color-lighten-6;
+  }
 }
 
 .button-container {
@@ -162,8 +172,6 @@ footer {
   font-size: 0.875rem;
   width: max-content;
   padding: 0.25rem;
-  border: 2px solid;
-  border-color: $base-bg-color-lighten-5;
   font-weight: bolder;
   letter-spacing: -0.5px;
   border-radius: 0.125rem;
@@ -175,9 +183,18 @@ footer {
   padding: 0.5rem;
   margin: 1rem;
   border-radius: 0.25rem;
+  transform: scale(1) rotate(0deg);
+  filter: invert(0);
+
+  transition: all 0.5s;
 
   & > a {
     display: block;
     width: 100%;
+  }
+
+  &:hover {
+    transform: scale(1.125) rotate(360deg);
+    filter: invert(1);
   }
 }

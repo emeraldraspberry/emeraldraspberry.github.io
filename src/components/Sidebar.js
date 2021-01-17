@@ -15,7 +15,31 @@ const Sidebar = {
       ),
       m(
         "nav",
-        m("ul", m("li", m("a", "Home")), m("li", m("a", "Other Stuff")))
+        m(
+          "ul",
+          m("li", m("a", "Home")),
+          m("li", m("a", "Other Stuff")),
+          m(
+            "li",
+            m("a", { href: "https://github.com/emeraldraspberry" }, "GitHub")
+          ),
+          m(
+            "li",
+            m(
+              "a",
+              { href: "https://soundcloud.com/user-621787582" },
+              "SoundCloud"
+            )
+          ),
+          m(
+            "li",
+            m(
+              "a",
+              { href: "https://old.reddit.com/u/EmeraldRaspberry" },
+              "Reddit"
+            )
+          )
+        )
       ),
       m(
         "footer",

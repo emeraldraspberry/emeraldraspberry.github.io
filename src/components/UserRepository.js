@@ -24,8 +24,7 @@ const UserRepository = {
       m(
         "div",
         { class: "button-container" },
-        m(LinkButton, { link: UserRepository.htmlUrl, text: "View" }),
-        m(LinkButton, { text: "See README" })
+        m(LinkButton, { link: UserRepository.htmlUrl, text: "View" })
       )
     );
   },

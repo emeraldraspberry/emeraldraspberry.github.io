@@ -3,12 +3,7 @@ import UserRepositories from "../components/UserRepositories.js";
 
 const Home = {
   view: (vnode) => {
-    return m(
-      "div",
-      { id: "home" },
-      m("h2", "Stuff I do on GitHub"),
-      m(UserRepositories)
-    );
+    return m("div", { id: "home" }, m("h2", "stuff..."), m(UserRepositories));
   },
 };
 
