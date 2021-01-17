@@ -1,4 +1,5 @@
 import m from "mithril";
+import LinkButton from "./LinkButton.js";
 
 const UserRepository = {
   name: String,
@@ -10,12 +11,14 @@ const UserRepository = {
     return m(
       "div",
       { id: "user-repository" },
+      m("h2", UserRepository.name),
+      m("p", UserRepository.description),
+      m("p", "Language: " + UserRepository.language),
       m(
-        "a",
-        { href: UserRepository.htmlUrl },
-        m("h2", UserRepository.name),
-        m("p", UserRepository.description),
-        m("p", "Language: " + UserRepository.language)
+        "div",
+        { class: "button-container" },
+        m(LinkButton, { link: UserRepository.htmlUrl, text: "View" }),
+        m(LinkButton, { text: "See README" })
       )
     );
   },
